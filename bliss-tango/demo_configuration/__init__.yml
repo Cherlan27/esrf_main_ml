@@ -1,0 +1,11 @@
+instrument: ESRF-ID00
+
+scan_saving:
+    class: ESRFScanSaving
+    beamline: id00
+    tmp_data_root: /tmp/scans/tmp
+    visitor_data_root: /tmp/scans/visitor
+    inhouse_data_root: /tmp/scans/inhouse
+
+icat_servers:
+    disable: true

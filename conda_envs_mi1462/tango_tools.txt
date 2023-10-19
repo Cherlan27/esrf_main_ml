@@ -1,0 +1,6 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: linux-64
+@EXPLICIT
+https://repo.anaconda.com/pkgs/main/linux-64/openjdk-8.0.152-h7b6447c_3.conda
+https://conda.anaconda.org/beenje/linux-64/jive-7.25-0.tar.bz2

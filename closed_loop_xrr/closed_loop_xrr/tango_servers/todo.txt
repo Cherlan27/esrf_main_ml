@@ -1,0 +1,7 @@
+rename package to closed_loop_xrr
+
+add base tango server that also has these options:
+
+exp_x_q_or_tth: string = "q", exp_energy_in_keV = 0.0,
+
+add tango server for mlreflect

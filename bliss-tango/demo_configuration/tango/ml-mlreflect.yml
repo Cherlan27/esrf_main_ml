@@ -1,0 +1,10 @@
+server: MLReflectModelEvaluator
+personal_name: mlreflect
+device:
+- tango_name: id00/mlreflectmodelevaluator/mlreflect
+  class: MLReflectModelEvaluator
+  properties:
+    exp_x_q_or_tth: tth
+    exp_energy_in_keV: '18.0'
+    footprint_beam_width: '0.072'
+    footprint_sample_length: '10.0'

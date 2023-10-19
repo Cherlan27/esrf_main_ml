@@ -1,0 +1,65 @@
+- class: Session
+  name: demo_session
+  setup-file: ./demo_session_setup.py
+  config-objects: 
+    - diode1
+    - diode2
+    - robx
+    - roby
+    - sx
+    - sy
+    - sz
+    - ml_q
+#    - fluo_diode
+#    - fluo_diode2
+    - slit_top
+    - slit_bottom
+    - slit_vertical_gap
+    - slit_vertical_offset
+#    - beamviewer
+#    - lima_simulator
+#    - tomocam
+#    - diffcam
+#    - diffcam2
+#    - mca1
+#    - mca2
+    - MG1
+    - MLMG
+    - sim_ct_gauss
+    - sim_ct_gauss_noise
+#    - transfocator
+#    - wcid00a
+#    - white_beam_attn
+    - regulation
+#    - beam_shutter
+#    - sample_shutter
+  icat-metadata:
+    default:
+      secondary_slit: $secondary_slits
+      sample.positioners: [$sy, $sz]
+      variables: $sx
+      optics.positioners: [$robx, $roby]
+#      detector05: $lima_simulator
+#      detector06: $beamviewer
+#      detector07: $fluo_diode.counter
+#      detector08: $diode1
+#      detector09: $diode2
+      attenuator01: $att1
+#    techniques:
+#      TOMO:
+#        detector01: $tomocam
+#      XRPD:
+#        detector02: $diffcam
+#      FLUO:
+#        detector03: $mca1
+#        detector04: $mca2
+- class: MeasurementGroup
+  name: MG1
+  counters:
+  - diode1
+  - diode2
+#  - beamviewer
+- class: MeasurementGroup
+  name: MLMG
+  counters:
+  - ml_q
